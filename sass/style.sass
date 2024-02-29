@@ -16,8 +16,11 @@
     background-size: cover
     background-image: url('../img/order.jpg')
     background-color: rgba(0, 0, 0, .6)
+    .col 
+        max-width: 50%
+
     &-form 
-        max-width: 60%
+        max-width: 42% !important
         border-radius: 12px
         color: black
         text-align: center
@@ -26,11 +29,21 @@
     
     form 
         flex-wrap: wrap
+        gap: 20px 8px
         justify-content: center
+        input
+            width: calc( 50% - 4px )
+
+    .h2 
+        margin-bottom: 26px
+        font-size: 40px
 
     .h3 
         text-align: center
     
 
-    .col 
-        max-width: 40%
+
+    &__text 
+        font-size: 18px
+        line-height: 28px
+        padding-left: 80px
